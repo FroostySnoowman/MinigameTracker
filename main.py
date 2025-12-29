@@ -95,16 +95,15 @@ else:
 intents = discord.Intents.all()
 
 initial_extensions = [
-                      'cogs.commands.ping'
+                      'cogs.commands.ping',
+                      'cogs.commands.mini'
                       ]
 
 class IchiroCommission(commands.Bot):
     def __init__(self):
         super().__init__(command_prefix=commands.when_mentioned_or('.'), owner_ids=[503641822141349888, 757657123843866786], intents=intents, activity=_activity, status=_status)
-        self.persistent_views_added = False
 
     async def on_ready(self):
-
         print(f'Signed in as {self.user}')
 
         print('Attempting to sync commands...')

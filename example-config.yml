@@ -1,0 +1,13 @@
+General:
+    TOKEN: ""
+    ACTIVITY: "watching"
+    DOING_ACTIVITY: "X"
+    STREAMING_ACTIVITY_TWITCH_URL: ""
+    STATUS: "online"
+
+    EMBED_COLOR: "#5865F2"
+
+    GUILD_ID: 1234567890123456789
+
+Permissions:
+    COMMAND_ROLES: []
