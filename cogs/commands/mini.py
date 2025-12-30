@@ -139,6 +139,10 @@ class TeamBuilderView(discord.ui.View):
             self.teams[team_key] = TeamState(color=color_name, role_id=role.id if role else None)
             self.add_item(TeamSelect(team_key=team_key, label=color_name, max_players=max_players))
 
+    def disable_all_items(self):
+        for item in self.children:
+            item.disabled = True
+
     async def interaction_check(self, interaction: discord.Interaction):
         if interaction.user.id != self.owner_id:
             await interaction.response.send_message("Only the command user can change this view.", ephemeral=True)
