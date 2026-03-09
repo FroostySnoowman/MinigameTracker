@@ -1,4 +1,4 @@
-# Ichiro Commission Discord Bot
+# Minigame Tracker
 
 A Discord bot built with `discord.py` that posts mini announcements, tracks reactions, retrieves signups, and builds team layouts.
 

@@ -99,7 +99,7 @@ initial_extensions = [
                       'cogs.commands.mini'
                       ]
 
-class IchiroCommission(commands.Bot):
+class MinigameTracker(commands.Bot):
     def __init__(self):
         super().__init__(command_prefix=commands.when_mentioned_or('.'), owner_ids=[503641822141349888, 757657123843866786], intents=intents, activity=_activity, status=_status)
 
@@ -114,7 +114,7 @@ class IchiroCommission(commands.Bot):
         for extension in initial_extensions:
             await self.load_extension(extension)
 
-client = IchiroCommission()
+client = MinigameTracker()
 client.remove_command('help')
 
 @client.event
